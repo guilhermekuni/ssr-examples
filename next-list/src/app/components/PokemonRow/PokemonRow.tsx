@@ -1,3 +1,5 @@
+"use client";
+
 import { PokemonType } from "../../data/types";
 
 import styles from "./styles.module.css";
@@ -12,6 +14,7 @@ export const PokemonRow = ({ pokemon }: Props) => {
       <h1>
         #{pokemon.id} {pokemon.name}
       </h1>
+
       <div className={styles["type-row"]}>
         {pokemon.type.map((type, index) => {
           if (index > 0) {

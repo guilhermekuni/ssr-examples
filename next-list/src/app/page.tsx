@@ -1,7 +1,9 @@
+"use client";
+
 import pokemonData from "./data/pokemon.json";
 import { PokemonRow } from "./components/PokemonRow";
 
-function App() {
+export default function Home() {
   return (
     <div>
       {pokemonData.map((item) => (
@@ -10,5 +12,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
